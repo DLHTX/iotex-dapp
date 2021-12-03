@@ -62,6 +62,9 @@ export const WalletSelecter = observer(() => {
       god.setChain(val);
     },
     connectInejct() {
+      console.log('====================================');
+      console.log(Network.ETH);
+      console.log('====================================');
       god.setNetwork(Network.ETH);
       activate(injected);
       god.eth.connector.latestProvider.save('inject');
